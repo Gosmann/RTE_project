@@ -48,7 +48,7 @@ Cl = 0 ;
 states_ic=[ 0 0 0 0 0 ];
 
 if flag == 1 % If flag = 1, return state derivatives, xDot
-    sys(1,1) = alpha_1*(x(2)*x(5) - x(3)*x(4)) - alpha_2*u(1) - alpha_3*x(1) ;
+    sys(1,1) = alpha_1*(x(2)*x(5) - x(3)*x(4)) - alpha_2*u(1) + alpha_3*x(1) ;
     sys(1,2) = a * x(4) - b * x(2) - p*x(1)*x(3) ; 
     sys(1,3) = a * x(5) - b * x(3) + p*x(1)*x(2) ;
     sys(1,4) = -gama_1*x(4) + gama_2*x(2)+gama_3*x(1)*x(3)+gama_4*u(2) ;
